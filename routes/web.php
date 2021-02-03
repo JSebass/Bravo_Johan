@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Administrar;
+use App\Http\Controllers\EditorialController;
 use App\Http\Controllers\LibroController;
 
 
@@ -19,5 +20,10 @@ use App\Http\Controllers\LibroController;
 Route::get('/', [Administrar::class, 'index']);
 Route::get('libros', [LibroController::class, 'index'])
 	->name('listado_libros');
-
+Route::get('editorial', [EditorialController::class, 'index'])
+->name('listado_editorial');
+Route::get('editorial/registro', [EditorialController::class, 'form_registro'])
+        ->name('form_registroEditorial');
+Route::post('editorial/registro', [EditorialController::class, 'registrar'])
+        ->name('registrarEditorial');
 

@@ -9,7 +9,7 @@
                 <a class="nav-link" href="{{ url('/libros') }}"> Libros <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#"> Editorial <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{{ url('/editorial') }}"> Editorial <span class="sr-only">(current)</span></a>
             </li>           
         </ul>
     </div>
