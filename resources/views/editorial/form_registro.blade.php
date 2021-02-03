@@ -17,8 +17,10 @@
 
         <label for="ciudad">Ciudad </label>
         <input type="text" id='ciudad' name='ciudad' class="form-control" required> <br> <br>
+        
             
         <button type="submit" class="btn btn-success">Registrar </button>
+        <a type="submit" class="btn btn-danger" href="{{route('listado_editorial')}}">Cancelar</a>
 
     </form>
 @stop
