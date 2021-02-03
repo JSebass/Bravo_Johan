@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Administrar;
+use App\Http\Controllers\LibroController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +17,7 @@ use App\Http\Controllers\Administrar;
 |
 */
 Route::get('/', [Administrar::class, 'index']);
+Route::get('libros', [LibroController::class, 'index'])
+	->name('listado_libros');
+
 
